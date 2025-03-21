@@ -27,8 +27,15 @@
 
 
 // // Async - await
-const getPokemonById = require('./js-foundation/07-async-await')
-getPokemonById( 4 )
+// const getPokemonById = require('./js-foundation/07-async-await')
+// getPokemonById( 4 )
+//     .then((pokemon) => console.log( {pokemon} ))
+//     .catch((err) => console.log(err))
+//     .finally( () => console.log('Finalmente'))
+
+// // Patron adaptador FETCH API
+const getPokemonById = require('./js-foundation/08-patron-adaptador-fetchAPI')
+getPokemonById( 1 )
     .then((pokemon) => console.log( {pokemon} ))
     .catch((err) => console.log(err))
     .finally( () => console.log('Finalmente'))
