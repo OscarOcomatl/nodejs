@@ -34,11 +34,20 @@
 //     .finally( () => console.log('Finalmente'))
 
 // // Patron adaptador FETCH API
+// const getPokemonById = require('./js-foundation/08-patron-adaptador-fetchAPI')
+// getPokemonById( 'pikachu' )
+//     .then((pokemon) => console.log( {pokemon} ))
+//     .catch((err) => console.log(err))
+//     .finally( () => console.log('Finalmente'))
+
+
+// // Axios
 const getPokemonById = require('./js-foundation/08-patron-adaptador-fetchAPI')
-getPokemonById( 1 )
+getPokemonById(1)
     .then((pokemon) => console.log( {pokemon} ))
     .catch((err) => console.log(err))
     .finally( () => console.log('Finalmente'))
+
 
 
 // const id = 1
